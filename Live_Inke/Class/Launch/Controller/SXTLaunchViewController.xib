@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SXTLaunchViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="bQK-OX-Z8o">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1US-1j-d5w">
+                    <rect key="frame" x="311" y="0.0" width="64" height="64"/>
+                    <state key="normal" image="launch_close"/>
+                    <connections>
+                        <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="mNE-jT-wB3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bQK-OX-Z8o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="73f-VX-Udq"/>
+                <constraint firstItem="1US-1j-d5w" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="7q1-3a-EqJ"/>
+                <constraint firstItem="bQK-OX-Z8o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LKb-fI-fFE"/>
+                <constraint firstItem="1US-1j-d5w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NQT-vX-dFy"/>
+                <constraint firstAttribute="bottom" secondItem="bQK-OX-Z8o" secondAttribute="bottom" id="ULw-ZH-x2c"/>
+                <constraint firstAttribute="trailing" secondItem="bQK-OX-Z8o" secondAttribute="trailing" id="dAn-L2-Wt7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="0qz-QI-qdz"/>
+            <point key="canvasLocation" x="-115" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_zbfx" width="250" height="444"/>
+        <image name="launch_close" width="64" height="64"/>
+    </resources>
+</document>
