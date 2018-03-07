@@ -10,7 +10,6 @@
 
 @interface SXTLiveHandler : SXTBaseHandler
 
-
 /**
  获取热门直播信息
 

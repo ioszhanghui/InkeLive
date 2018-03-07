@@ -41,6 +41,8 @@
 		46C108342047E56A008FADDA /* SXTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C108322047E56A008FADDA /* SXTMeViewController.m */; };
 		46C108352047E56A008FADDA /* SXTMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46C108332047E56A008FADDA /* SXTMeViewController.xib */; };
 		46C108382047E63B008FADDA /* SXTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C108372047E63B008FADDA /* SXTNavigationController.m */; };
+		46C34465204FC46B00365BFD /* SXTLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C34463204FC46B00365BFD /* SXTLiveCell.m */; };
+		46C34466204FC46B00365BFD /* SXTLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46C34464204FC46B00365BFD /* SXTLiveCell.xib */; };
 		5133210017750A6EA0C0B6F2 /* libPods-Live_InkeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 006B9128A00AB0D68E2E1BA4 /* libPods-Live_InkeTests.a */; };
 		EA9A6A30D0EBE594D8E0CDF2 /* libPods-Live_Inke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D60FF4451FD490A028DB61 /* libPods-Live_Inke.a */; };
 /* End PBXBuildFile section */
@@ -67,7 +69,6 @@
 		13259513204EF9350098ADDC /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
 		13259514204EF9360098ADDC /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		13259515204EF9360098ADDC /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
-		13259516204EF9360098ADDC /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIConfig.h; path = "../../../../../Downloads/bjsxt_ios_inke-master/尚学堂映客/尚学堂映客/Class/NetWork/APIConfig.h"; sourceTree = "<group>"; };
 		13259517204EF9360098ADDC /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		1325951A204EF9670098ADDC /* SXTBaseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTBaseHandler.h; sourceTree = "<group>"; };
 		1325951B204EF9670098ADDC /* SXTBaseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTBaseHandler.m; sourceTree = "<group>"; };
@@ -128,6 +129,10 @@
 		46C108332047E56A008FADDA /* SXTMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTMeViewController.xib; sourceTree = "<group>"; };
 		46C108362047E63B008FADDA /* SXTNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTNavigationController.h; sourceTree = "<group>"; };
 		46C108372047E63B008FADDA /* SXTNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTNavigationController.m; sourceTree = "<group>"; };
+		46C34460204F947000365BFD /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		46C34462204FC46B00365BFD /* SXTLiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTLiveCell.h; sourceTree = "<group>"; };
+		46C34463204FC46B00365BFD /* SXTLiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTLiveCell.m; sourceTree = "<group>"; };
+		46C34464204FC46B00365BFD /* SXTLiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTLiveCell.xib; sourceTree = "<group>"; };
 		5294FF5123376342415FCCBC /* Pods-Live_InkeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live_InkeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Live_InkeTests/Pods-Live_InkeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FA9C2F2C76547F8904E09BD /* Pods-Live_InkeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live_InkeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Live_InkeUITests/Pods-Live_InkeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9308337301BAC4E0B53B5A54 /* Pods-Live_InkeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Live_InkeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Live_InkeUITests/Pods-Live_InkeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -255,9 +260,9 @@
 		46C107FB20479DA6008FADDA /* SHow */ = {
 			isa = PBXGroup;
 			children = (
+				46C34461204FC44700365BFD /* View */,
 				46C107FF20479DDA008FADDA /* Handler */,
 				46C107FE20479DCE008FADDA /* Controller */,
-				46C107FD20479DC4008FADDA /* View */,
 				46C107FC20479DBC008FADDA /* Model */,
 			);
 			path = SHow;
@@ -278,13 +283,6 @@
 				1325952A204F048F0098ADDC /* SXTExtra.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		46C107FD20479DC4008FADDA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		46C107FE20479DCE008FADDA /* Controller */ = {
@@ -485,7 +483,7 @@
 		46C1081420479ED5008FADDA /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				13259516204EF9360098ADDC /* APIConfig.h */,
+				46C34460204F947000365BFD /* APIConfig.h */,
 				13259514204EF9360098ADDC /* HttpTool.h */,
 				13259517204EF9360098ADDC /* HttpTool.m */,
 				13259513204EF9350098ADDC /* UIImageView+SDWebImage.h */,
@@ -521,6 +519,16 @@
 				46C107D720479C8A008FADDA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46C34461204FC44700365BFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46C34462204FC46B00365BFD /* SXTLiveCell.h */,
+				46C34463204FC46B00365BFD /* SXTLiveCell.m */,
+				46C34464204FC46B00365BFD /* SXTLiveCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,6 +654,7 @@
 				46C108352047E56A008FADDA /* SXTMeViewController.xib in Resources */,
 				464A0B642048EF2D00525FE1 /* SXTLaunchViewController.xib in Resources */,
 				464A0B732048FE2400525FE1 /* SXTNearViewController.xib in Resources */,
+				46C34466204FC46B00365BFD /* SXTLiveCell.xib in Resources */,
 				46C107D220479C8A008FADDA /* Assets.xcassets in Resources */,
 				46C107D020479C8A008FADDA /* Main.storyboard in Resources */,
 			);
@@ -840,6 +849,7 @@
 				464A0B762049301200525FE1 /* SXTMainTopView.m in Sources */,
 				13259522204F02C10098ADDC /* SXTLive.m in Sources */,
 				464A0B632048EF2D00525FE1 /* SXTLaunchViewController.m in Sources */,
+				46C34465204FC46B00365BFD /* SXTLiveCell.m in Sources */,
 				13259519204EF9360098ADDC /* HttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
