@@ -7,7 +7,8 @@
 //
 
 #import "SXTBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface SXTHotViewController : SXTBaseViewController
+@interface SXTHotViewController : UITableViewController
 
 @end

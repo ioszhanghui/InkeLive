@@ -7,13 +7,19 @@
 //
 
 #import "SXTLiveHandler.h"
+#import "SXTLive.h"
 
 @implementation SXTLiveHandler
 
 +(void)executeGetHotLiveTaskWithSuccess:(SuccessBlock)success faild:(FailBlock)fail{
     
     [HttpTool getWithPath:API_LiveGetTop params:nil success:^(id json) {
-        success(json);
+        if ([json[@"dm_error"]integerValue]) {
+            fail(json);
+        }else{
+          NSArray * lives =  [SXTLive mj_objectArrayWithKeyValuesArray:json[@"lives"]];
+            success(lives);
+        }
     } failure:^(NSError *error) {
         fail(error);
     }];

@@ -88,7 +88,7 @@
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     
     CGFloat width =scrollView.frame.size.width;
-    CGFloat height =SCREEN_HEIGHT;
+    CGFloat height =SCREEN_HEIGHT-64-49;
     
     NSInteger index =scrollView.contentOffset.x/width;
     
@@ -98,9 +98,7 @@
         return;
     }
     VC.view.frame=CGRectMake(scrollView.contentOffset.x, 0, width, height);
-    [self.contentScrollView addSubview:VC.view];
-    
-    
+    [self.contentScrollView addSubview:VC.view];    
 }
 
 @end
